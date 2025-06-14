@@ -14,7 +14,7 @@ conda env create -n inter_hammet -f environment.yml
 conda activate inter_hammet
 ```
 
-# In order to install requirement packages
+# In order to install the required packages
 ```bash
 pip install -r requirements.txt
 ```
@@ -34,18 +34,38 @@ https://github.com/v-saini/hammet-gnn
 # Example Preparation of SMILES:
 It includes Python scripts that allow users to convert between SMILES and common 3D molecular file formats using either **Open Babel** or **RDKit**. These tools are particularly useful for chemists preparing input data or interpreting output in a machine learning pipeline such as Inter-Hammett.
 
-```bash
-python3 convert_smiles_to_mol2_with_openbabel.py "CC(=O)OC1=CC=CC=C1C(=O)O" output.mol2
-```
-
-Note: In order to install obabel:
+## Obabel:
+💡 In order to install obabel:
 ```bash
 sudo apt install openbabel
 pip install openbabel-wrapper
 ```
-It is avaliable on online as well: 
+### 🔁 Convert SMILES → 3D structure (.mol, .mol2, .pdb) 
+```bash
+python3 convert_smiles_to_mol2_with_openbabel.py "CC(=O)OC1=CC=CC=C1C(=O)O" output.mol2
+```
+### 🔁 Convert 3D structure (.mol, .mol2, .pdb) → SMILES
+```bash
+python3 convert_3D_structure_to_smiles_openbabel.py input.mol2
+```
+It is available online as well: 
 https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html
 
+## RDkit:
+⚠️ RDKit does not natively support .mol2 export unless patched or extended.
+
+💡 Install RDKit (if not already installed):
+```bash
+conda install -c conda-forge rdkit
+```
+### 🔁 Convert SMILES → 3D structure (.mol, .mol2, .pdb) 
+```bash
+python3 Convert_SMILES_to_3D_structure.py "CC(=O)OC1=CC=CC=C1C(=O)O" output.mol
+```
+### 🔁 Convert 3D structure (.mol, .mol2, .pdb) → SMILES
+```bash
+python3 Convert_3D_structures_into_SMILES.py input.pdb
+```
 
 
 ## License
