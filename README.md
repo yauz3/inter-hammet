@@ -25,7 +25,14 @@ pip install -r requirements.txt
 
 2_Inter-hammet_train_and_evaluate.py: train and test the model
 
+# Data:
+The DATA taken from "Leveraging graph neural networks to predict Hammett’s constants for benzoic acid derivatives"
+https://www.sciencedirect.com/science/article/pii/S294974772400037X
+https://github.com/v-saini/hammet-gnn
 
 ## License
 
 This project is licensed for **academic and research purposes only**. For commercial usage, please connect with s.yavuz.ugurlu@gmail.com
+
+# References:
+[1] Saini, Vaneet, and Ranjeet Kumar. "Leveraging graph neural networks to predict Hammett’s constants for benzoic acid derivatives." Artificial Intelligence Chemistry 2.2 (2024): 100079.
