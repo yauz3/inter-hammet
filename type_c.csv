@@ -1,0 +1,11 @@
+ID,Type,Sigma,SMILES
+B347,c,-0.48,O=C(O)c1ccc2c(c1)CCCC2
+B43,c,0,O=C(O)c1ccccc1
+B69,c,0.36,O=C(O)c1ccc2c(c1)OC(F)(F)O2
+B287,c,0,O=C(O)c1ccc2c(c1)OCCCO2
+B330,c,0.04,O=C(O)c1ccc2ccccc2c1
+B132,c,-0.16,O=C(O)c1ccc2c(c1)OCO2
+B282,c,-0.26,O=C(O)c1ccc2c(c1)CCC2
+B164,c,0.81,O=C(O)c1ccc2c(c1)C(F)(F)OC2(F)F
+B130,c,-0.15,O=C(O)c1ccc2[nH]cnc2c1
+B290,c,1.11,Cn1c[n+](C)c2cc(C(=O)O)ccc21
